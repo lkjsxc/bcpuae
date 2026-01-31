@@ -2,6 +2,8 @@
 
 This documentation is the source of truth for bcpuae—a modal text editor in Rust. It must be sufficient to re-implement the full system without reading the source code.
 
+<img src="image.png">
+
 ## Start Here
 
 - **[Policy + Operating Contract](docs/policy/INSTRUCT.md)** — Always read first. Contains invariants and file limits.
