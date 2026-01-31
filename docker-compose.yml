@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  bcpuae:
+    build: .
+    container_name: bcpuae
+    # TTY allocation required for terminal UI
+    tty: true
+    stdin_open: true
+    # Mount current directory for file editing
+    volumes:
+      - .:/home/editor/workspace
+    working_dir: /home/editor/workspace
+    # Keep container running for attach/detach workflow
+    command: ["bcpuae"]
+
+volumes:
+  cargo-cache:
